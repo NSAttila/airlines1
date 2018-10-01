@@ -6,11 +6,22 @@ h1 {
   color: #d1e2d0;
 }
 
+.title_description h1 {
+  text-align: center;
+}
+
+.title_description p {
+  padding-left: 20px;
+  text-align: center;
+}
+
 #title_letters {
   color: #33b5e5;
   font-size: 35px;
   text-align: center;
-  font-style: "cursive", sans-serif;
+  background-color: #b3bec9;
+  font-style: Impact, fantasy, "cursive", sans-serif;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.24);
 }
 
 #middle_letter {
