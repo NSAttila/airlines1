@@ -1,4 +1,4 @@
-$lightblue: #33b5e5;
+$lightblue: #59a5a5;
 * {
     box-sizing: border-box;
 }
@@ -6,6 +6,8 @@ $lightblue: #33b5e5;
 h1 {
   color: #d1e2d0;
 }
+
+// Title description
 .title_description h1{
   text-align: center;
 }
@@ -13,46 +15,75 @@ h1 {
   padding-left: 20px;
   text-align: center;
 }
+
+// Monogram TtT (Travel to Transylvania)
 #title_letters{
   color: $lightblue;
-  font-size: 35px;
+  font-size: 30px;
   text-align: center;
-  background-color:#b3bec9;
-  font-style: Impact, fantasy,"cursive", sans-serif;
+  background-color:lightgray;//#b3bec9;
+  font-style: serif, sans-serif;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0,0,0,0.24);
 }
 #middle_letter {
-  color: red;
-  font-size: 40px;
+  color: #9e2622;
+  font-size: 20px;
 }
 
+// Row1 Title Monogram and little description
 .row1::after {
   content: "";
   clear: both;
   display: table;
   padding: 15px;
 }
+
+// Links to the othe pages
 .pages ul{
   list-style-type: none;
   margin: 0px;
   padding: 0px;
 }
+#li1, #li2, #li3, #li4 {
+  color: #a5f7be;
+  margin-left: 12px;
+}
 .pages li {
   padding: 8px;
   margin-bottom: 7px;
   background-color: $lightblue;
-  color: #ffffff;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0,0,0,0.24);
 }
 .pages li:hover {
   background-color: #0099cc;
 }
+
+// Museums
+.pages1 {
+  margin-top: 22px;
+  font-size: 14px;
+  padding: 5px;
+  border-spacing: 0px;
+  line-height: 1.0;
+  font-family: myFirstFont;
+    src: url(sansation_bold.woff);
+    //font-weight: bold;
+}
+.museums {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+// Tabe
 .head-color {
   background-color: $lightblue;
   padding: 10px;
   margin-bottom: 10px;
   margin-top: 25px;
 }
+
+// Row2 until the last picture
 .row2::after {
   content: "";
   clear: both;
@@ -65,10 +96,45 @@ h1 {
   padding: 7px;
 }
 
+// Last picture
 .lastpicture img {
     width: 80%;
     height: auto;
     image-orientation: center;
+}
+.lastpicture > p {
+  font-stretch: ultra-expanded;
+}
+#transfagarasan_text {
+  font-size: 15px;
+  font-stretch: normal;
+  font-style: oblique;
+    src: url(sansation_bold.woff);
+    font-weight: lighter;
+}
+
+// Flex tabe
+.flex-container {
+    margin: 15px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightgray;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15), 2px 2px 7px rgba(0,0,0,.20);
+}
+.flex-container > tr {
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+// Move to the next pages
+nav {
+  text-align: right;
+  padding: 0px;
+  margin-right: 10px;
 }
 
 html {

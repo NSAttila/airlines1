@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="mainpage.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       </head>
     <body>
         <div class="row1">
@@ -29,11 +30,23 @@
             <div class="col-2 col-s-2" id="page_menu">
               <div class="pages">
                 <ul>
-                    <li><a href="cities.html">Cities</a></li>
-                    <li><a href="villages.html">Villages</a></li>
-                    <li><a href="castles.html">Castles</a></li>
-                    <li><a href="nature.html">Nature</a></li>
+                    <li><a id="li1" href="cities.html">Cities</a></li>
+                    <li><a id="li2" href="villages.html">Villages</a></li>
+                    <li><a id="li3" href="castles.html">Castles</a></li>
+                    <li><a id="li4" href="nature.html">Nature</a></li>
                 </ul>
+            </div>
+            <div class="pages1">
+            <h4 class="museums"><span class="glyphicon glyphicon-book"></span> Main Museums in Transylvania</h4>
+                <p>Unification Museum in Alba Iulia</p>
+                <p>Ethnographic Museum in Brasov</p>
+                <p>Art Museum in Brasov</p>
+                <p>Brasov History Museum</p>
+                <p>Weavers' Bastion Museum in Brasov</p>
+                <p>Ethnographic Museum of Transylvania in Cluj</p>
+                <p>National Art Museum in Cluj</p>
+                <p>National History Museum of Transylvania in Cluj</p>
+                <p>Szekler Museum in Miercurea Ciuc</p>
             </div>
           </div>
 
@@ -52,43 +65,64 @@
             <div class="w3-card-4 w3-margin w3-white">
                   <img id="transfagarasean" src="transfagarasean2.jpg" alt="transfagarasan" style="width:100%" width="614" height="488">
                   <div class="w3-container">
-                  <p>Transfagarasan the second-highest paved road in Romania (situated at an altitude of 2055 meters above sea level) with the longest road tunnel in the country (887 m) and amazing scenery over the Fagaras Mountains. The road was built as a strategic military route and runs North to South across the highest mountains of Romania.The Top Gear team stated Transfagarasan road” the best road in the world”. On the top of the road we can discover the spectacular landscape of Balea Lake, a natural glacier lake at 2040 m and Balea Waterfalls, one of the most famous waterfall in Romania.</p>
+                  <p id="transfagarasan_text">Transfagarasan the second-highest paved road in Romania (situated at an altitude of 2055 meters above sea level) with the longest road tunnel in the country (887 m) and amazing scenery over the Fagaras Mountains. The road was built as a strategic military route and runs North to South across the highest mountains of Romania.The Top Gear team stated Transfagarasan road” the best road in the world”. On the top of the road we can discover the spectacular landscape of Balea Lake, a natural glacier lake at 2040 m and Balea Waterfalls, one of the most famous waterfall in Romania.</p>
                 </div>
               </div>
           </div>
 
           <!--Table with some basic factors-->
-          <div>
+          <div class="flex-container">
           <table class="table">
             <thead class="head-color">
               <tr>
                 <th scope="col">Population</th>
-                <th scope="col">Languages</th>
                 <th scope="col">Religions</th>
                 <th scope="col">Area</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
+                <th>Romanians - 70.62%</th>
+                <td>Orthodoxy - 65.96%</td>
+                <td>Total	- 102,834 km2</td>
               </tr>
               <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
+                <th>Hungarians - 17.92%</th>
+                <td>Mainline Protestantism - 9.34%</td>
+                <td>- - -</td>
               </tr>
               <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
+                <th>Roma - 3.99%</th>
+                <td>Roman Catholicism - 9.32%</td>
+                <td>- - -</td>
+              </tr>
+              <tr>
+                <th>Ukrainians - 0.63%</th>
+                <td>Evangelican Protestantism - 4.70</td>
+                <td>- - -</td>
+              </tr>
+              <tr>
+                <th>other - 1.26%</th>
+                <td>Greek Catholicism - 2.10%</td>
+                <td>- - -</td>
               </tr>
             </tbody>
           </table>
         </div>
+        <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1">Previous</a>
+          </li>
+          <li class="page-item disabled"><a class="page-link" href="mainpage.html">1</a></li>
+          <li class="page-item"><a class="page-link" href="cities.html">2</a></li>
+          <li class="page-item"><a class="page-link" href="villages.html">3</a></li>
+          <li class="page-item"><a class="page-link" href="castles.html">4</a></li>
+          <li class="page-item"><a class="page-link" href="nature.html">5</a></li>
+          <li class="page-item">
+            <a class="page-link" href="cities.html">Next</a>
+          </li>
+        </ul>
+      </nav>
     </body>
 </html>
