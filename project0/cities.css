@@ -9,14 +9,12 @@
   padding: 20px;
   width: 500px;
   height: 400px;
-  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0,0,0,0.24);
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.24);
 }
+
 .container p {
   text-align: center;
   font-size: auto;
-  //box-sizing: content-box;
-  //width: 100%;
-  //text-overflow: "";
 }
 
 nav {
@@ -28,3 +26,5 @@ nav {
 html {
   font-family: cursive, sans-serif;
 }
+
+/*# sourceMappingURL=cities.css.map */
