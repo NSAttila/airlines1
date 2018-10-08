@@ -1,0 +1,33 @@
+.container {
+  display: relative;
+  width: 100%;
+
+}
+
+.container .box:nth-child(1) .section:nth-child(1) {
+    background: url(pictures/brancastle.jpg);
+    background-size: cover;
+}
+.container .box:nth-child(1) .section:nth-child(2) {
+    background: url(pictures/brancastle1.jpg);
+    background-size: cover;
+}
+.container .box:nth-child(1) .section:nth-child(3) {
+    background: url(pictures/brancastle2.jpg);
+    background-size: cover;
+}
+.container .box:nth-child(1) .section:nth-child(4) {
+    background: url(pictures/brancastle3.jpg);
+    background-size: cover;
+}
+
+// Navigation bar
+nav {
+  text-align: right;
+  padding: 0px;
+  margin-right: 10px;
+}
+
+html {
+  font-family: cursive, sans-serif;
+}
