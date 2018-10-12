@@ -9,7 +9,7 @@ body {
     //box-shadow: 5px 5px 5px rgba(0, 0, 0, 1), 2px 2px 7px rgba(0,0,0,1);
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100vh; // Megkell valtoztatni..
     background: url(pictures/pano1.jpg);
     background-size: cover;
 }
@@ -30,6 +30,7 @@ body {
   padding: 50px;
   font-size: 18px;
   color: #6d7e86;
+
 }
 
 
@@ -83,16 +84,6 @@ body {
   background-size: cover;
 }
 
-// Navigation bar
-nav {
-  text-align: right;
-  padding: 0px;
-  margin-right: 10px;
-}
-
-html {
-  font-family: cursive, sans-serif;
-}
 
 
 [class*="col-"]{
@@ -133,8 +124,7 @@ html {
   line-height: 40px;
   font-size: 20px;
 }
-
-// Move to the next pages
+// Navigation bar
 nav {
   text-align: right;
   padding: 0px;

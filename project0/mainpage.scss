@@ -1,4 +1,5 @@
-$lightblue: #59a5a5;
+//$lightblue: #59a5a5;
+$dropdowncolor: #4b8bf3;
 * {
     box-sizing: border-box;
 }
@@ -7,30 +8,39 @@ h1 {
   color: #d1e2d0;
 }
 
+
 // Title description
+.title_description {
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #4286f4, #d5e0f2);
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+}
 .title_description h1{
   text-align: center;
+  color: #47494cf7;
 }
 .title_description p{
   padding-left: 20px;
   text-align: center;
 }
 
-// Monogram TtT (Travel to Transylvania)
-#title_letters{
-  color: $lightblue;
-  font-size: 30px;
-  text-align: center;
-  background-color:lightgray;//#b3bec9;
-  font-style: serif, sans-serif;
-  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0,0,0,0.24);
+// Mobile responsive font-size.x
+@media (min-width: 600px) {
+  .title_description h1::before {
+    content: "Travel to Transylvania";
+    font-size: 40px;
+  }
 }
-#middle_letter {
-  color: #9e2622;
-  font-size: 20px;
+@media (max-width: 599px) {
+  .title_description h1::before {
+    content: "Travel to Transylvania";
+    font-size: 18px;
+  }
 }
 
-// Row1 Title Monogram and little description
+
+// Row1 Title and little description
 .row1::after {
   content: "";
   clear: both;
@@ -38,28 +48,77 @@ h1 {
   padding: 15px;
 }
 
-// Links to the othe pages
-.pages ul{
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
+// Dropdown to other pages
+.pages {background-color: $dropdowncolor ;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.4),0 3px 4px rgba(0, 0, 0, 0.2);
 }
-#li1, #li2, #li3, #li4 {
-  color: #a5f7be;
-  margin-left: 12px;
+.pages a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  display: inline-block;
 }
-.pages li {
+.pages ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+.pages ul li{
+  display: inline-block;
+}
+.pages ul li a {
+  text-decoration: none;
+}
+.pages ul li a i{
+  text-decoration: none;
   padding: 8px;
-  margin-bottom: 7px;
-  background-color: $lightblue;
-  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0,0,0,0.24);
+  font-size: 24px;
+//  background: #555;
 }
-.pages li:hover {
-  background-color: #0099cc;
+.pages ul li:hover {
+  background: $dropdowncolor;
+  text-decoration: none;}
+.pages ul li:hover ul {
+  display: block;
+  text-decoration: none;}
+.pages ul li ul {
+  position: relative;
+  width: 200px;
+  display: none;
+}
+.pages ul li ul li {
+  background: $dropdowncolor;
+  display: block;
+}
+.pages ul li ul li a {display: block !important;}
+.pages ul li ul li:hover {
+  background: $dropdowncolor;
+  text-decoration: none;
+}
+
+// On smaller screen size display just an icon
+@media (min-width: 700px) {
+  .pages ul li a::after {
+    content: " Pages";
+  }
+}
+@media (max-width: 699px) {
+  .pages ul li a::after {
+    content: "";
+  }
+}
+
+@media (max-width: 2000px) {
+  .pages ul li ul li a::after {
+    content: "";
+  }
 }
 
 // Museums
 .pages1 {
+  color: white;
+  background: $dropdowncolor;
   margin-top: 22px;
   font-size: 14px;
   padding: 5px;
@@ -68,6 +127,10 @@ h1 {
   font-family: myFirstFont;
     src: url(sansation_bold.woff);
     //font-weight: bold;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.4),0 3px 4px rgba(0, 0, 0, 0.2);
+}
+.pages1 span {
+  color: #3c3e42;
 }
 .museums {
   font-weight: bold;
@@ -77,7 +140,7 @@ h1 {
 
 // Tabe
 .head-color {
-  background-color: $lightblue;
+  background-color: $dropdowncolor;
   padding: 10px;
   margin-bottom: 10px;
   margin-top: 25px;
@@ -100,6 +163,7 @@ h1 {
 .lastpicture img {
     width: 80%;
     height: auto;
+    height: 84vh;
     image-orientation: center;
 }
 .lastpicture > p {

@@ -89,16 +89,6 @@ body {
   background-size: cover;
 }
 
-nav {
-  text-align: right;
-  padding: 0px;
-  margin-right: 10px;
-}
-
-html {
-  font-family: cursive, sans-serif;
-}
-
 [class*=col-] {
   float: left;
   padding: 7px;
